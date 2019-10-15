@@ -41,18 +41,15 @@ def main():
     random1 = random.randint(0, maximum)
     random2 = random.randint(0, maximum)
     if problem == "*":
-        print("User picked multiplication. Here is the problem:")
-        print(random1, "*", random2)
+        print("User picked multiplication. Here is the problem:", random1, "*", random2)
         user_answer = float(input("What is the answer to this problem?"))
         compare_answers(user_answer, random1 * random2)
     elif problem == "-":
-        print("User picked subtraction. Here is the problem:")
-        print(random1, "-", random2)
+        print("User picked subtraction. Here is the problem:", random1, "-", random2)
         user_answer = float(input("What is the answer to this problem?"))
         compare_answers(user_answer, random1 - random2)
     else:
-        print("User picked addition. Here is the problem:")
-        print(random1, "+", random2)
+        print("User picked addition. Here is the problem:", random1, "+", random2)
         user_answer = float(input("What is the answer to this problem?"))
         compare_answers(user_answer, random1 + random2)
     print("Thanks for playing!")
